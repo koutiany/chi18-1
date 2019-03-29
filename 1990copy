@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>1990</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/heroic-features.css" rel="stylesheet">
+
+<div class="container">
+  <meta charset='utf-8' />
+  <title>Display a map</title>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+  <style>
+    body { margin:0; padding:0; }
+    #map { position:absolute; top:950px; bottom:250px; left:150px; height:75%; width:75%; }
+  </style>
+</div>
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Multiculturalism in German Football World </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="national.html">National</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="regional.html">Regional</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="summary.html">Summary</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Jumbotron Header -->
+    <header class="jumbotron my-4">
+      <h1 class="display-3">1990 Italy World Cup</h1>
+      <p class="lead">In this world cup, Germany recurited 23 players. </p>
+      <img src="image/1990.jpg" class="img-fluid" alt="Responsive image">
+      <p class="lead">players' names </p>
+      <p>
+      </p
+      </script>
+    </header>
+
+  </div>
+
+<!-- mapbox -->
+<div class="container">
+<div id='map'></div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1Ijoia291dGlhbnkiLCJhIjoiY2puZzdxY3V4MDAzcjNtcHVid3RmMTc2eSJ9.jakbkG46bVyAT-ZwxS2ddg';
+const map = new mapboxgl.Map({
+  container: 'map',
+  style: 'mapbox://styles/koutiany/cjtnjsg9a3i9q1fqroccgoybo',
+  center: [11.110508, 48.031493],
+  zoom: 6.4
+});
+</script>
+</div>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</div>
+</body>
+
+</html>
